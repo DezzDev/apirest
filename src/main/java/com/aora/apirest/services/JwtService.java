@@ -52,6 +52,7 @@ public class JwtService {
   }
 
   // metodo para obtener todos los claims del token
+  @SuppressWarnings("deprecation")
   private Claims getAllClaims(String token){
     return Jwts
         .parser()

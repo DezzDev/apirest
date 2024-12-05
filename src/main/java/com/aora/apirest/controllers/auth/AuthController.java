@@ -3,16 +3,15 @@ package com.aora.apirest.controllers.auth;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.aora.apirest.dto.JwtResponse;
 import com.aora.apirest.dto.LoginRequest;
 import com.aora.apirest.dto.RegisterRequest;
-import com.aora.apirest.entities.Users;
-import com.aora.apirest.repositories.UserRepository;
+
+
 import com.aora.apirest.services.UserService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,8 +22,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequestMapping("/auth")
 public class AuthController {
 
-  @Autowired
-  private UserRepository userRepository;
+  
   @Autowired
   private UserService userService;
  
